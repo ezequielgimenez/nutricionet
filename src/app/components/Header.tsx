@@ -25,12 +25,12 @@ export default function HeaderComp() {
         </button>
 
         {/* Logo centrado real */}
-        <div className="absolute left-1/2 -translate-x-1/2 pt-2 w-full flex justify-center">
+        <div className="absolute left-1/2 -translate-x-1/2 pt-2 w-full flex justify-center pl-5">
           <Image
-            src="/logo/logo-mobile.png"
+            src="/logo/logo-desktop.png"
             alt="Logo"
-            width={279}
-            height={65}
+            width={326}
+            height={76}
             priority
             unoptimized
           />
@@ -38,10 +38,16 @@ export default function HeaderComp() {
       </div>
 
       <div
-        className={` ${
-          showNav ? "flex" : "hidden"
-        } flex-col items-center fixed  top-0 left-0 w-screen h-125  bg-[#A48845]/94
- z-50 rounded-b-4xl`}
+        className={`
+    fixed top-0 left-0 w-screen h-126.5 bg-[#A48845]/94 z-50 rounded-b-4xl
+    flex flex-col items-center
+    transition-all duration-300 ease-out
+    ${
+      showNav
+        ? "opacity-100 translate-y-0 pointer-events-auto"
+        : "opacity-0 -translate-y-8 pointer-events-none"
+    }
+  `}
       >
         <div className="flex w-full justify-between px-4 py-4">
           <div onClick={openNav}>
