@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 // import Loading from "@/app/loading";
 //hook
+//
 
 const content = {
   hero: {
