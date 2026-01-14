@@ -81,7 +81,7 @@ export default function HeroSectionComp() {
               h-[85vh]
               sm:h-[80vh]
               md:h-[90vh]
-              xl:h-[110vh]
+              xl:h-screen
             "
             >
               {/* Desktop */}
