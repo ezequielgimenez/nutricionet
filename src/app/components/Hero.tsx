@@ -89,7 +89,7 @@ export default function HeroSectionComp() {
                 src={desktopImg}
                 alt="carousel desktop"
                 fill
-                className="object-cover hidden lg:block"
+                className="object-cover hidden "
                 sizes="100vw"
                 priority={index === 0}
               />
@@ -99,7 +99,7 @@ export default function HeroSectionComp() {
                 src={mobileImg}
                 alt="carousel mobile"
                 fill
-                className="object-cover block lg:hidden"
+                className="object-cover block"
                 sizes="100vw"
                 priority={index === 0}
               />
